@@ -1,8 +1,4 @@
 # python-fastapi-mongodb-students
-Here is a detailed write‑up (around 4,000 characters) for your GitHub repository **`python-fastapi-mongodb-students-details`** (at `https://github.com/godfreypurification7/python-fastapi-mongodb-students-details`), which you can use in your README or project description:
-
----
-
 This project, **python-fastapi-mongodb-students-details**, is a full‑fledged REST API built with **FastAPI** and **MongoDB** to manage student records. It provides a clean, well-structured backend service that supports creating, reading, updating, and deleting student data in an asynchronous, type-safe manner.
 
 At its core, the API uses Pydantic models to define **request schemas**, **update schemas**, and **response schemas**, giving precise control over which fields are required, optional, or read-only. The `StudentCreate` model represents the data that a client needs to supply when creating a new student (name, parent name, email, address, sex, and subject list). For updates, the `StudentUpdate` model uses **optional fields**, allowing partial updates so that clients can send only the fields they want to change — other data remains intact. The `StudentDetails` response model extends the create schema by adding an `id` field, represented as a **UUID**, not the default MongoDB ObjectId.
